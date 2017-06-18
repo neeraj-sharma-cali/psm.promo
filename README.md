@@ -5,7 +5,7 @@ This is the promotion images micro-service endpoint. It support HTTP GET only.
 1. Install Node.js 
 2. Check version : $node --version ^7.10.0
 3. Clone the projects git repository
-    *project-root$ git clone https://github.com/neeraj-sharma-cali/psm.promo.git
+    * project-root$ git clone https://github.com/neeraj-sharma-cali/psm.promo.git
 
 ## Steps
 4. cd into the project root. psm.promo
