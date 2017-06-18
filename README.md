@@ -1,7 +1,7 @@
 # PSM promo server 
 This is the promotion images micro-service endpoint. It support HTTP GET only.
 
-##Development Prerequisite:
+## Development Prerequisite:
 1. Install Node.js 
 2. check version : $node --version ^7.10.0
 3. Clone the projects git repository
@@ -37,13 +37,6 @@ This will allow you to make changes in real-time. The server restarts are handle
 When DB is integrated in this setup using a local Dockerized instance e.g. MySQL. The whole application development cycle is seamless.
 The boot automatically picks up the new migration scripts and applies them and the app is in sync with the data with at auto-start. 
  
-##Production: (above and beyond)
-A Docker containerized instance is available and running on the cloud GCP at:
- http://35.186.190.133/api/promos/images
- 
- example endpoint:
- http://35.186.190.133/api/promos/images?keywords=flowers&numImages=3
-
 ##Testing:
 #### Warning.
 Please ensure the Dev server is down to avoid port binding issues.
@@ -70,7 +63,7 @@ The different files are as follows
 * **images.repo.js** : The database related code. Queries etc. NOT DONE.
 * **images.repo.mock.js** : A mock DB implementation with image data.
 
- **NOTE to Reviewer:** I chose node.js and reactive functional programming model with a REST architecture. I also like and am well versed with other programming paradigms and can be highly effective with them.
+ **NOTE to Reviewer:** I chose node.js and reactive functional programming model with REST architecture. I love different technologies and am well versed with other programming paradigms and can be highly effective with them.
  
 ## Extensibility and Code Maintainability
 Adding more functionality to this code is quite easy. You can 
@@ -87,6 +80,15 @@ There are different levels of error handling.
     * Generic error handler for unidentified endpoints. Gives 404. Provides security.
     * Coding errors that slip the development net. Gives 500. Risk management. 
 2. Then there is error handling for Functional and System errors also returning 500.
+
+## Production: (above and beyond)
+A Docker containerized instance is available and running on the cloud GCP at:
+ http://35.186.190.133/api/promos/images
+ 
+ example endpoint:
+ http://35.186.190.133/api/promos/images?keywords=flowers&numImages=3
+
+This is a Kubernetes based deployment on Google Container Engine. I will keep this running for a week. Please let me know if it is required for longer.
  
 ## What is not covered?
 Business and Operational monitoring and detailed logging. In the interest of time, I have skipped this for now and it needs to be covered. 
