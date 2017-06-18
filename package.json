@@ -1,0 +1,28 @@
+{
+  "name": "promo server",
+  "version": "1.0.0",
+  "description": "the main promo server for PSM",
+  "main": "server/boot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://<username>@github.com/psm-source-vault/promo.git"
+  },
+  "author": "neeraj sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/psm-source-vault/promo/issues"
+  },
+  "homepage": "https://github.com/psm-source-vault/psm#readme",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "lodash": "^4.17.4",
+    "nconf": "^0.8.4",
+    "path": "^0.12.7",
+    "rxjs": "^5.4.0"
+  },
+  "devDependencies": {}
+}

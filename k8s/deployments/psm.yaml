@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: psm
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: promo
+        track: stable
+    spec:
+      containers:
+        - name: promo
+          image: "chowck/psm-promo:1.0.0"
+          lifecycle:
+            preStop:
+              exec:
+                command: ["node", "server/boot.js"]
+      imagePullSecrets:
+        - name: regsecret
