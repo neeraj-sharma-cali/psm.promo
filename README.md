@@ -35,7 +35,7 @@ This will allow you to make changes in real-time. The server restarts are handle
 
 **A note:** 
 When DB is integrated in this setup using a local Dockerized instance e.g. MySQL. The whole application development cycle is seamless.
-The boot automatically picks up the new migration scripts and applies them and the app is in sync with the data with at auto-start. 
+The boot automatically picks up the new migration scripts and applies them and the app is in sync with the data upon auto-start. 
  
 ##Testing:
 #### Warning.
@@ -47,8 +47,8 @@ In development mode
 and run test with coverage
 * npm run test-coverage 
 
-For other kinds of testing:
-You can use Postman, Or the browser directly. Or even Curl, if you are technically inclined.
+#### Some Other Ways to Test:
+This is an HTTP app. You can also use Postman/Browser/Curl/HTTPie or anything similar.
  
 ## Design notes
 The entry point is server/boot.js, which 
@@ -91,4 +91,4 @@ A Docker containerized instance is available and running on the cloud GCP at:
 This is a Kubernetes based deployment on Google Container Engine. I will keep this running for a week. Please let me know if it is required for longer.
  
 ## What is not covered?
-Business and Operational monitoring and detailed logging. In the interest of time, I have skipped this for now and it needs to be covered. 
+Business and Operational monitoring and detailed logging. In the interest of time, I have skipped this for now. 
