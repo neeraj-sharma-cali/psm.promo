@@ -9,7 +9,7 @@ This is the promotion images micro-service endpoint. It support HTTP GET only.
     * project-root$ git clone https://github.com/neeraj-sharma-cali/psm.promo.git
 
 ## Steps
-4. cd into the project root. psm.promo
+4. cd into the project-root/psm.promo
 5. Install dependencies.
     * npm install
 6. Run all tests
@@ -32,7 +32,9 @@ There are a few ways to start the server
 
 2. nodemon server/boot.js --MYSQL_HOST=mhost
 
-Consider using nodemon in development mode. 
+#### Notes:
+1. --MYSQL might be misleading. It is there only for illustrative purposes. This project does not use a DB. 
+2. Consider using nodemon in development mode. 
 This will allow you to make changes in real-time. The server restarts are handled by nodemon.
 
 **A note:** 
