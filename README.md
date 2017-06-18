@@ -96,6 +96,54 @@ A Docker containerized instance is available and running on the cloud GCP at:
  http://35.186.190.133/api/promos/images?keywords=flowers&numImages=3
 
 This is a Kubernetes based deployment on Google Container Engine. I will keep this running for a week. Please let me know if it is required for longer.
+
+## Sample request and response.
+* Request:
+http://35.186.190.133/api/promos/images?keywords=deserts,flowers&numImages=10
+
+* Response
+```json
+{
+    "imagesData": [
+        {
+            "url": "http://images.1.com",
+            "width": 50,
+            "height": 25
+        },
+        {
+            "url": "http://images.3.com",
+            "width": 50,
+            "height": 25
+        },
+        {
+            "url": "http://images.5.com",
+            "width": 50,
+            "height": 25
+        },
+        {
+            "url": "http://images.6.com",
+            "width": 50,
+            "height": 25
+        },
+        {
+            "url": "http://images.7.com",
+            "width": 50,
+            "height": 25
+        },
+        {
+            "url": "http://images.8.com",
+            "width": 50,
+            "height": 25
+        },
+        {
+            "url": "http://images.9.com",
+            "width": 50,
+            "height": 25
+        }
+    ],
+    "numberResults": 7
+}
+``` 
  
 ## What is not covered?
 Business and Operational monitoring and detailed logging. In the interest of time, I have skipped this for now. 
