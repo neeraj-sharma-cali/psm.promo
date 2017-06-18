@@ -70,19 +70,19 @@ If you want to review other related code, the entry point is server/boot.js, whi
  
 ## Extensibility and Code Maintainability
 Adding more functionality to this code is quite easy. You can 
-* add more endpoints and it can scale easily.
-* also add more verbs to the same endpoint.
+* Add more endpoints. server/domain/... 
+* Add more verbs to the same endpoint. server/domain/promos/images.route.js
 * Add DB layers easily without touching other code. Manage risk of change.
-* Add more functional logic in the right layers.
+* Add functional logic in the right layers.
 * To support new functionality if you need a third party library:
     * npm install **lib-x** --save
 
 ## Error Handling
 There are different levels of error handling.
-1. There are default error handlers to gracefully handle as follows:
-    * Generic error handler for unidentified endpoints. Gives 404. Provides security.
-    * Coding errors that slip the development net. Gives 500. Risk management. 
-2. Then there is error handling for Functional and System errors also returning 500 with more details in the message.
+1. Graceful error handling through default handlers. server/app.js
+    * Generic error handler for unidentified endpoints. Gives 404 HTTP status. Provides security.
+    * Coding errors that slip the development net. Gives 500 HTTP status. Risk management. 
+2. Then there is Functional and System error handling. Returns 500 with more details in the message.
 
 ## Production: (above and beyond)
 A Docker containerized instance is available and running on the cloud GCP at:
