@@ -22,6 +22,15 @@ describe('Promo Images API Tests', function () {
             });
         });
 
+        it('should get 404 for unsupported HTTP verbs', function (done) {
+            request(base_url).post('/promos/images').end(function (err, res) {
+                expect(res.statusCode).to.equal(404);
+                expect(res.body).to.be.an('object');
+                expect(res.body).to.have.property('major', 404);
+                done();
+            });
+        });
+
         it('should handle 500 system errors gracefully.', function (done) {
             request(base_url).get("/promos/images?keywords=_sys.err").end(function (err, res) {
                 expect(res.statusCode).to.equal(500);
@@ -41,6 +50,8 @@ describe('Promo Images API Tests', function () {
                 done();
             });
         });
+
+
 
         // Have sealed the api to catch errors. Uncomment the case to simulate errors that would be caught by catch-all.
         /*it('should handle 500 catch-all default errors gracefully.', function (done) {

@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://<username>@github.com/psm-source-vault/promo.git"
+    "url": "https://github.com/neeraj-sharma-cali/psm.promo.git"
   },
   "author": "neeraj sharma",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/psm-source-vault/promo/issues"
+    "url": "https://github.com/neeraj-sharma-cali/psm.promo/issues"
   },
-  "homepage": "https://github.com/psm-source-vault/psm#readme",
+  "homepage": "https://github.com/neeraj-sharma-cali/psm.promo#readme",
   "dependencies": {
     "body-parser": "^1.17.2",
     "express": "^4.15.3",
