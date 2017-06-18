@@ -68,7 +68,7 @@ function add_default_handlers() {
  * Start the server on the port.
  */
 function listen() {
-    app.listen(port, () => {
+    return app.listen(port, () => {
         console.log(`PSM : Promo Server started at port :: ${port}`);
     })
 }
@@ -82,6 +82,6 @@ exports = module.exports = {
         configure();
         publish_routes(router);
         add_default_handlers();
-        listen();
+        return listen();
     }
 };

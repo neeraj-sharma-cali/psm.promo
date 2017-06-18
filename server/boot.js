@@ -5,4 +5,3 @@ const app = require("./app.js");
 db_proxy
     .boot()
     .subscribe(() => app.boot());
-
