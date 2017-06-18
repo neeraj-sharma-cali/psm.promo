@@ -67,8 +67,6 @@ The different files are as follows
 If you want to review other related code, the entry point is server/boot.js, which: 
 1. first boots db proxy simulation, which simulates DB init and DB upgrade. This keeps app and DB in sync.
 3. The server starts on port 3000.
-
- **NOTE to Reviewer:** I chose node.js and reactive functional programming model with REST architecture. I love different technologies and am well versed with other programming paradigms and can be highly effective with them.
  
 ## Extensibility and Code Maintainability
 Adding more functionality to this code is quite easy. You can 
