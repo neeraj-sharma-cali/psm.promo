@@ -75,7 +75,7 @@ Adding more functionality to this code is quite easy. You can
 * Add DB layers easily without touching other code. Manage risk of change.
 * Add more functional logic in the right layers.
 * To support new functionality if you need a third party library:
-    * npm install <lib-x> --save
+    * npm install **lib-x** --save
 
 ## Error Handling
 There are different levels of error handling.
