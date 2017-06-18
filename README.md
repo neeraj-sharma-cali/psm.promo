@@ -82,7 +82,7 @@ There are different levels of error handling.
 1. There are default error handlers to gracefully handle as follows:
     * Generic error handler for unidentified endpoints. Gives 404. Provides security.
     * Coding errors that slip the development net. Gives 500. Risk management. 
-2. Then there is error handling for Functional and System errors also returning 500.
+2. Then there is error handling for Functional and System errors also returning 500 with more details in the message.
 
 ## Production: (above and beyond)
 A Docker containerized instance is available and running on the cloud GCP at:
