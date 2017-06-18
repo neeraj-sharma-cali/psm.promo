@@ -38,7 +38,7 @@ This will allow you to make changes in real-time. The server restarts are handle
 When DB is integrated in this setup using a local Dockerized instance e.g. MySQL. The whole application development cycle is seamless.
 The boot automatically picks up the new migration scripts and applies them and the app is in sync with the data upon auto-start. 
  
-##Testing:
+## Test:
 #### Warning.
 Please ensure the Dev server is down to avoid port binding issues.
 
