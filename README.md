@@ -53,6 +53,10 @@ and run test with coverage
 
 #### Some Other Ways to Test:
 This is an HTTP app. You can also use Postman/Browser/Curl/HTTPie or anything similar.
+
+#### And what about Test Data:
+The server has 10 image items between the 3 keywords 'desert', 'flowers' and 'blue'. You can look at **images.repo.mock.js** for this data and how it is returned.
+ 
  
 ## Design notes
 
