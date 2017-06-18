@@ -52,17 +52,18 @@ and run test with coverage
 This is an HTTP app. You can also use Postman/Browser/Curl/HTTPie or anything similar.
  
 ## Design notes
-The entry point is server/boot.js, which 
-1. first calls the db_migrator simulation to simulate DB upgrade.. The DB and app must be in sync and this avoids human errors.
-2. The server starts on port 3000.
 
-In terms of functional code and request handling, refer to server/domain/promos directory. The rest of the code is supporting code to boot etc. 
+For functional code and request handling, refer to server/domain/promos directory. The rest of the code is supporting code to boot, DB related etc. 
 The different files are as follows
 * **images.protocol.js** : The file with the input/output/error messages.
 * **images.svc.js** : The service, where the business logic resides. Coordinates between route (HTTP) and DB.
 * **images.routes.js** : The route to handle HTTP and pass to the service, streams respone back to the client.
 * **images.repo.js** : The database related code. Queries etc. NOT DONE.
 * **images.repo.mock.js** : A mock DB implementation with image data.
+
+If you want to review other related code, the entry point is server/boot.js, which: 
+1. first boots db proxy simulation, which simulates DB init and DB upgrade. This keeps app and DB in sync.
+3. The server starts on port 3000.
 
  **NOTE to Reviewer:** I chose node.js and reactive functional programming model with REST architecture. I love different technologies and am well versed with other programming paradigms and can be highly effective with them.
  
