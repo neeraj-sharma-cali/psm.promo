@@ -32,7 +32,7 @@ They can be found in package.json and are listed below
 #### Development Dependencies
 1. "chai": BDD/TDD assertion library for node
 2. "istanbul":  The code coverage tool
-3. "mocha": JavaScript test framework,
+3. "mocha": JavaScript test framework
 4. "supertest": Higher level abstraction for HTTP testing
  
 ## Start Development Server
