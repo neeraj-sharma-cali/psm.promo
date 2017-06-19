@@ -19,12 +19,21 @@ This is the promotion images micro-service endpoint. It support HTTP GET only.
 
 ## Dependencies (for reference only. )
 They can be found in package.json and are listed below
+
+#### Runtime Dependencies
+
 1. "body-parser": HTTP body parser
 2. "express": Node.js web-framework. We only use it for HTTP handling and routing.
 3. "lodash": A higher level functional toolkit/library for JavaScript.
 4. "nconf": Hierarchical node.js configuration
 5. "path": Interface to filesystem path
 6. "rxjs": Reactive Extension library for Javascript. [Must Refer to Observables](http://reactivex.io/documentation/observable.html)
+ 
+#### Development Dependencies
+1. "chai": BDD/TDD assertion library for node
+2. "istanbul":  The code coverage tool
+3. "mocha": JavaScript test framework,
+4. "supertest": Higher level abstraction for HTTP testing
  
 ## Start Development Server
 There are a few ways to start the server
